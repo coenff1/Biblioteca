@@ -20,6 +20,15 @@ public class Libro {
         this.autores = autores;
     }
 
+    public Libro(int id, String titulo, int isbn, String categoria, String editorial, List<Autor> autores) {
+        this.id = id;
+        this.titulo = titulo;
+        this.isbn = isbn;
+        this.categoria = categoria;
+        this.editorial = editorial;
+        this.autores = autores;
+    }
+
     public String getEditorial() {
         return editorial;
     }

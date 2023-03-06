@@ -8,7 +8,7 @@ public class AlumnoDAO {
     Scanner scan = new Scanner(System.in);
     List<Alumno> alumnos = new ArrayList<>();
     
-    public void agAlumno() {
+    public void agregarAlumno() {
         int id = 1;
         int numCuenta;
         String nombre, apPaterno, apMaterno, genero;
@@ -48,5 +48,10 @@ public class AlumnoDAO {
         System.out.println("Número del alumno a eliminar");
         p=scan.nextInt();
         alumnos.remove(p);
+        
+        //recorrer el array para eliminar no dejar espacios
+        for(int i=p; i<alumnos.size(); i++){
+            alumnos.get(i);
+        }
     }
 }

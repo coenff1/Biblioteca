@@ -35,8 +35,16 @@ public class ProfesorDAO {
         id++;
     }
     
-    
     public void listaProfesores(){
-        
+        for(int i=0; i<profesores.size(); i++){
+            System.out.println(profesores.get(i)+ " nombre(s): "+ profesores.get(i).getNombre()+ ",   apellido paterno: "+profesores.get(i).getApPaterno()+ ",   apellido materno: "+profesores.get(i).getApMaterno()+ ",   género: "+profesores.get(i).getGenero()+ ". ");
+        }
+    }
+
+    public void eliminarProfesor(){
+        int n;
+        System.out.println("Ingrese la posición a eliminar: ");
+        n=scan.nextInt();
+        profesores.remove(n);
     }
 }
